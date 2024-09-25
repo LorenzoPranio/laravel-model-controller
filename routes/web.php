@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Guest\PageController;
-use App\Http\Controllers\Guest\MovieController;
+use App\Http\Controllers\Guest\PageController as PageController;
+use App\Http\Controllers\Guest\MovieController as  MovieController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,4 @@ use App\Http\Controllers\Guest\MovieController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
-Route::get('/movie', [MovieController::class, 'index'])->name('movie');
+Route::get('/movies', [MovieController::class, 'index'])->name('movies');

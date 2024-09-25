@@ -7,12 +7,9 @@
 </head>
 
 <body>
-    @include('partials.header')
+    @include('layouts.partials.header')
 
-    <main>
-        @yield('content')
-    </main>
-
+    @include('movies.index')
 </body>
 
 </html>
