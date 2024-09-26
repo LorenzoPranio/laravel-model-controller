@@ -15,4 +15,3 @@ use App\Http\Controllers\Guest\MovieController as  MovieController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
-Route::get('/movies', [MovieController::class, 'index'])->name('movies');
